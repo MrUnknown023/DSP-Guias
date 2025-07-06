@@ -1,0 +1,48 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+}
+
+.title2 {
+  color: #333;
+}
+
+.text {
+  margin-right: 10px;
+}
+
+.input {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.button {
+  padding: 8px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+.ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.li {
+  margin-bottom: 5px;
+}
+
+.hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
