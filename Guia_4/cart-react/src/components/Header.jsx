@@ -87,7 +87,7 @@ export const Headers = ({
                   </div>
                   <button 
                     className="btn btn-primary w-100 d-flex align-items-center justify-content-center"
-                    onClick={() => alert('¡Gracias por tu compra!')}
+                    onClick={() => alert('¡no!')}
                   >
                     <i className="bi bi-credit-card me-2"></i> Comprar Ahora
                   </button>

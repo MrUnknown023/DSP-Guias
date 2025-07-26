@@ -1,5 +1,4 @@
 import React from "react";
-//import { data } from "../app/data";
 import { useEffect, useState } from "react";
 
 export const ProductList = ({
@@ -14,7 +13,7 @@ export const ProductList = ({
 
   // Traer productos desde la API
   useEffect(() => {
-    fetch("https://68842d9a745306380a37b565.mockapi.io/api/v1/dps/libros")
+    fetch("https://68842d9a745306380a37b565.mockapi.io/api/v1/dps/restaurant")
       .then((res) => res.json())
       .then((data) => {
         const productsWithQuantity = data.map((item) => ({
