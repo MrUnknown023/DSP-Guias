@@ -42,7 +42,6 @@ export const Headers = ({
           </span>
         </button>
 
-        {/* Panel del carrito */}
         <div
           className={`position-absolute end-0 mt-2 ${active ? "" : "d-none"}`}
           style={{ width: "min(350px, 90vw)", zIndex: 1000 }}
@@ -116,7 +115,7 @@ export const Headers = ({
                     </div>
                     <button
                       className="btn btn-primary w-100 d-flex align-items-center justify-content-center"
-                      onClick={() => setShowPurchaseModal(true)} // NUEVO
+                      onClick={() => setShowPurchaseModal(true)} 
                     >
                       <i className="bi bi-credit-card me-2"></i> Comprar Ahora
                     </button>
@@ -134,7 +133,6 @@ export const Headers = ({
         </div>
       </div>
 
-      {/* Modal para eliminar producto */}
       {showModal && (
         <>
           <div className="modal fade show d-block" tabIndex="-1">
@@ -180,7 +178,6 @@ export const Headers = ({
         </>
       )}
 
-      {/* Modal para confirmar "Vaciar Todo" */}
       {showClearCartModal && (
         <>
           <div className="modal fade show d-block" tabIndex="-1">
@@ -223,7 +220,6 @@ export const Headers = ({
         </>
       )}
 
-      {/* NUEVO: Modal de resumen de compra */}
       {showPurchaseModal && (
         <>
           <div className="modal fade show d-block" tabIndex="-1">
@@ -267,7 +263,7 @@ export const Headers = ({
                       alert("¡Gracias por tu compra!");
                       onCleanCart();
                       setShowPurchaseModal(false);
-                      setActive(false); // Oculta el carrito
+                      setActive(false);
                     }}
                   >
                     Confirmar Compra
