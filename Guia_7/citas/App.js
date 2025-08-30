@@ -9,6 +9,8 @@ import {
   Keyboard,
   Platform,
 } from "react-native";
+import Cita from './componentes/citas';
+import Formulario from './componentes/Formulario';
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import Colors from "./src/utils/colors";
 const App = () => {
